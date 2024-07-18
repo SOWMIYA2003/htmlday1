@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: "center";
+        }
+        th {
+            background-color: yellow;
+            text-align:"center" ;
+    
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            
+
+        }
+        .images img {
+            width: 200px; /* Set a fixed width */
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensures the image covers the set dimensions */
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="2">My Day</th>
+        </tr>
+        <tr>
+            <td>
+                <ol>
+                    <li>wake up early
+                        <ul>
+                            <li>5AM
+                                <ul>
+                                    <li>walk</li>
+                                    <li>jog</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>breakfast
+                        <ul>
+                            <li>8AM
+                                <ul>
+                                    <li>eggs</li>
+                                    <li>coffee</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>go to Saveetha
+                        <ul>
+                            <li>8AM
+                                <ul>
+                                    <li>attend classes</li>
+                                    <li>to be continued</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+            <td rowspan="2">
+                <table>
+                    <tr>
+                        <th>Things to watch</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="images">
+                                <img src="jog.jpg" alt="Image 1" ,width="100%">
+                                <img src="om.jpg" alt="Image 2",width="100%">
+                                <img src="cof.jpg" alt="Image 3",width="100%">
+                                <img src="cla.jpg" alt="Image 4",width="100%">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
